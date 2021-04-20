@@ -1,0 +1,13 @@
+Accesibilty Shader!
+
+Color blind - main feature
+		-post processing
+
+adjustable motion blur
+user settings
+adjust levels for specific types - personaly - curves
+advanced topic: unity
+
+animation
+	maybe rainbow balls?
+
