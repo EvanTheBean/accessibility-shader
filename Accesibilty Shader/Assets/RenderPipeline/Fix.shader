@@ -58,28 +58,28 @@
 
                 if (type == 0) //Protanope
                 {
-                    if (Approximation(g,b))
-                    {
-                        g = 1.0;
-                        b = 0.0;
-                    }
-                    else if (Approximation(b,g))
-                    {
-                        b = 1.0;
-                        g = 0.0;
-                    }
-                }
-                else if (type == 1) //Deuteranope
-                {
-                    if (Approximation(r, b))
+                    if (Approximation(r,b))
                     {
                         r = 1.0;
                         b = 0.0;
                     }
-                    else if (Approximation(b, r))
+                    else if (Approximation(b,r))
                     {
                         b = 1.0;
                         r = 0.0;
+                    }
+                }
+                else if (type == 1) //Deuteranope
+                {
+                    if (Approximation(g, b))
+                    {
+                        g = 1.0;
+                        b = 0.0;
+                    }
+                    else if (Approximation(b, g))
+                    {
+                        b = 1.0;
+                        g = 0.0;
                     }
                 }
                 else if (type == 2) //Tritanope

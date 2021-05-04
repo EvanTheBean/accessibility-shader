@@ -10,6 +10,8 @@ public class moveCamera : MonoBehaviour
     public float jumpSpeed = 8.0f;
     public float gravity = 20.0f;
 
+    public SpriteRenderer test;
+
     private float yaw = 0.0F;
     public float turnSpeed = 1f;
 
@@ -32,6 +34,11 @@ public class moveCamera : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape))
         {
             Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            test.enabled = !test.enabled;
         }
     }
 
