@@ -45,7 +45,7 @@ public class postProcessingCamera : MonoBehaviour
             Settings.fixOn = !Settings.fixOn;
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             Settings.type += 1;
             Settings.type = Settings.type %= 3;
