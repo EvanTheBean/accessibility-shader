@@ -53,7 +53,7 @@
                 fixed4 col = tex2D(_MainTex, i.uv);
                 
                 float r = col.r;
-                float b = col.b;
+                float b = col.r;
                 float g = col.g;
 
                 if (type == 0) //Protanope
@@ -68,7 +68,7 @@
                         b += 0.5;
                         g = 0.0;
                     }
-                    r = g + b;
+                    //r = g + b;
                 }
                 else if (type == 1) //Deuteranope
                 {
@@ -82,7 +82,7 @@
                         b += 0.5;
                         r = 0.0;
                     }
-                    g = b + r;
+                    //g = b + r;
                 }
                 else if (type == 2) //Tritanope
                 {
@@ -96,7 +96,7 @@
                         g += 0.5;
                         r = 0.0;
                     }
-                    b = r + g;
+                    //b = r + g;
                 }
 
                 col.r = r;
