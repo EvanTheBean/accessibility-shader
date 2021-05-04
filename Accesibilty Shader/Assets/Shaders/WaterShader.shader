@@ -1,4 +1,9 @@
-﻿Shader "Custom/WaterShader"
+﻿/*
+	Vertex and fragment shader for adjustable waves on a plane
+	Made by Gavin Lechner
+*/
+
+Shader "Custom/WaterShader"
 {
 	Properties
 	{

@@ -1,5 +1,10 @@
 ﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
+/*
+    Screen space shader for adjustable motion blur
+    Made by Evan Koppers
+*/
+
 Shader "Unlit/MotionBlur"
 {
     Properties
@@ -62,9 +67,10 @@ Shader "Unlit/MotionBlur"
                 previous.xyz /= previous.w;
                 previous.xy = previous.xy * 0.5 + 0.5;
 
+                //set this current one as previous for next
                 tex2D(_MainTexPreviousm, i.uv) = current;
 
-                fixed22 blurVec = previous.xy - i.uv;
+                fixed2 blurVec = previous.xy - i.uv;
                 
                 fixed4 result = tex2D(_MainTex, i.uv);
                 for (int i = 1; i < nSamples; ++i) {

@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+    Post processing pipelline for color deficiency shaders
+    Made by Evan Koppers
+*/
+
 public class postProcessingCamera : MonoBehaviour
 {
     public RenderTexture middleStep;

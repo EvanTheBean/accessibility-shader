@@ -1,4 +1,9 @@
-﻿Shader "Hidden/Simulation"
+﻿/*
+    Post processing Shader to emulate being color bline
+    Made by Evan Koppers
+*/
+
+Shader "Hidden/Simulation"
 {
     Properties
     {

@@ -1,4 +1,9 @@
-﻿Shader "Hidden/Fix"
+﻿/*
+    Post processing Shader to help fix colors for those who experience color defficienty
+    Made by Evan Koppers
+*/
+
+Shader "Hidden/Fix"
 {
     Properties
     {
