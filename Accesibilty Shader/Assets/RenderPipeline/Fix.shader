@@ -53,47 +53,50 @@
                 fixed4 col = tex2D(_MainTex, i.uv);
                 
                 float r = col.r;
-                float b = col.r;
+                float b = col.b;
                 float g = col.g;
 
                 if (type == 0) //Protanope
                 {
                     if (Approximation(g,b))
                     {
-                        g = 1.0;
+                        g += 0.5;
                         b = 0.0;
                     }
                     else if (Approximation(b,g))
                     {
-                        b = 1.0;
+                        b += 0.5;
                         g = 0.0;
                     }
+                    r = g + b;
                 }
                 else if (type == 1) //Deuteranope
                 {
                     if (Approximation(r, b))
                     {
-                        r = 1.0;
+                        r += 0.5;
                         b = 0.0;
                     }
                     else if (Approximation(b, r))
                     {
-                        b = 1.0;
+                        b += 0.5;
                         r = 0.0;
                     }
+                    g = b + r;
                 }
                 else if (type == 2) //Tritanope
                 {
                     if (Approximation(r, g))
                     {
-                        r = 1.0;
+                        r += 0.5;
                         g = 0.0;
                     }
                     else if (Approximation(g, r))
                     {
-                        g = 1.0;
+                        g += 0.5;
                         r = 0.0;
                     }
+                    b = r + g;
                 }
 
                 col.r = r;
