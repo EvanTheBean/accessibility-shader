@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DeuteranopeFix
+  m_Name: Fix
   m_Shader: {fileID: 4800000, guid: d89e5649d48efa241b194ca3b6477306, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

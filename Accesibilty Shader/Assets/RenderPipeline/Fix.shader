@@ -58,12 +58,12 @@
 
                 if (type == 0) //Protanope
                 {
-                    if (Approximation(g,b))
+                    if (Approximation(g,b) && !Approximation(g, r))
                     {
                         g += 0.5;
                         b = 0.0;
                     }
-                    else if (Approximation(b,g))
+                    else if (Approximation(b,g) && !Approximation(b, r))
                     {
                         b += 0.5;
                         g = 0.0;
@@ -72,12 +72,12 @@
                 }
                 else if (type == 1) //Deuteranope
                 {
-                    if (Approximation(r, b))
+                    if (Approximation(r, b) && !Approximation(r, g))
                     {
                         r += 0.5;
                         b = 0.0;
                     }
-                    else if (Approximation(b, r))
+                    else if (Approximation(b, r) && !Approximation(b, g))
                     {
                         b += 0.5;
                         r = 0.0;
@@ -86,12 +86,12 @@
                 }
                 else if (type == 2) //Tritanope
                 {
-                    if (Approximation(r, g))
+                    if (Approximation(r, g) && !Approximation(r, b))
                     {
                         r += 0.5;
                         g = 0.0;
                     }
-                    else if (Approximation(g, r))
+                    else if (Approximation(g, r) && !Approximation(g, b))
                     {
                         g += 0.5;
                         r = 0.0;
