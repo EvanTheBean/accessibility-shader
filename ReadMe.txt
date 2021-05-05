@@ -17,6 +17,11 @@ Color Blind Shader
 
 ____________________________________________________
 
+Resources Used
+
+Texture distortion:
+https://forum.unity.com/threads/a-waving-texture.247458/
+
 Assests used
 
 Water Texture
